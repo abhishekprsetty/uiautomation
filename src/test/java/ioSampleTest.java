@@ -19,7 +19,7 @@ public class ioSampleTest {
         DesiredCapabilities caps = new DesiredCapabilities();
 
         File appDir = new File("src/apk");
-        File app = new File(appDir, "ApiDemos-deb.apk");
+        File app = new File(appDir, "ApiDemos-de.apk");
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2_XL_API_25");
         caps.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
