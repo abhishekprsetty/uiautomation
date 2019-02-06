@@ -18,7 +18,7 @@ public class ioSampleTest {
     public void setup () throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
 
-        File appDir = new File("src/apk");
+        File appDir = new File("src");
         File app = new File(appDir, "ApiDemos-de.apk");
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2_XL_API_25");
         caps.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
@@ -26,7 +26,7 @@ public class ioSampleTest {
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
 //        caps.setCapability(MobileCapabilityType.NO_RESET,"true");
-//        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
         driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"),caps);
     }
 
