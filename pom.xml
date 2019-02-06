@@ -21,5 +21,17 @@
             <version>6.14.3</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>9755c9842e38cc116aa37bd53d8f6d9d6c1bf772</version>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 </project>
