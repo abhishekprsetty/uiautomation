@@ -25,8 +25,8 @@ public class ioSampleTest {
         caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
-        caps.setCapability(MobileCapabilityType.NO_RESET,"true");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
+//        caps.setCapability(MobileCapabilityType.NO_RESET,"true");
+//        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
         driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"),caps);
     }
 
